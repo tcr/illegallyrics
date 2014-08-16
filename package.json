@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Get lyrics illegally. Don't use this!!!",
   "main": "index.js",
+  "repository": "tcr/illegallyrics",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
