@@ -1,0 +1,11 @@
+{
+  "name": "illegallyrics",
+  "version": "1.0.0",
+  "description": "Get lyrics illegally. Don't use this!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Secret",
+  "license": "MIT"
+}
