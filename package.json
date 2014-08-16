@@ -1,6 +1,6 @@
 {
   "name": "illegallyrics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get lyrics illegally. Don't use this!!!",
   "main": "index.js",
   "repository": "tcr/illegallyrics",

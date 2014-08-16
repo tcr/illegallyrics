@@ -3,7 +3,7 @@ var skim = require('skim');
 
 function steal (search, next) {
   rem.stream('http://lyrics.wikia.com/Special:Search', {
-    search: "ben folds five narcolepsy"
+    search: search
   }).get().pipe(skim({
     results: {
       $query: 'article h1 a',
@@ -21,10 +21,10 @@ function steal (search, next) {
       }
     }, function (data) {
       var html = data.lyrics;
-      var lyrics = html.replace(/\n\n[\s\S]+$/, '').replace(/^[\s\S]+Ad/, '').replace(/<br>/g, '\n').replace(/<[^>]+>/g, ''))
+      var lyrics = html.replace(/\n\n[\s\S]+$/, '').replace(/^[\s\S]+Ad/, '').replace(/<br>/g, '\n').replace(/<[^>]+>/g, '');
       next(null, lyrics);
     }))
   }));
 }
 
-module.exports = steal;
+exports.steal = steal;
